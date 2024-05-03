@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingLeanbackLauncher">
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ArtisticAvenues"
+        tools:targetApi="31">
+        <activity
+            android:name=".ArtistList"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewCustomerRecords"
+            android:exported="false" />
+        <activity
+            android:name=".AdminViewArtistRecords"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="false" />
+        <activity
+            android:name=".AddNewPhoto"
+            android:exported="false" />
+        <activity
+            android:name=".UploadPhoto"
+            android:exported="false" />
+        <activity
+            android:name=".AdminEditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerFavorites"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerViewArtist"
+            android:exported="false" />
+        <activity
+            android:name=".ArtistEditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerEditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".AdminProfile"
+            android:exported="false" />
+        <activity
+            android:name=".ArtistProfile"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerProfile"
+            android:exported="false" />
+        <activity
+            android:name=".UploadPhotoGallery"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerSignUp"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerLogin"
+            android:exported="false" />
+        <activity
+            android:name=".ArtistLogin"
+            android:exported="false" />
+        <activity
+            android:name=".ArtistSignUp"
+            android:exported="false" />
+        <activity
+            android:name=".AdminSignUp"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLogin"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminVerifyArtist"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
